@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #7AC1F9;
+}
+
+/* Header */
+
+header {
+    background: #aa4b6b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: 100%;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.nav-bar a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    border: lightblue solid 1px;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 1.5rem;
+    margin-left: 5px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    animation: moveUp 1s ease-in;
+}
+
+.home-img {
+    display: block;
+    height: 450px;
+    animation: moveRight 1s ease-in;
+}
+
+.container-home {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.titles {
+    width: 50%;
+}
+
+.titles h1 {
+    padding: 20px;
+    font-size: 60px;
+    animation: moveLeft 1s ease-in;
+}
+
+.profession {
+    padding: 20px;
+    animation: moveDown 1s ease-in;
+}
+
+.wave {
+    height: 100px;
+    width: 100%;
+    background: #aa4b6b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Animaciones */
+@keyframes moveLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveDown {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/* Acerca de */
+.container-about {
+    width: 100%;
+    margin-top: 100px;
+    background-color: #7AC1F9;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.title-about {
+    text-align: center;
+    font-size: 2rem;
+    margin: 50px 0px 50px;
+}
+
+.about-img {
+    width: 400px;
+    display: block;
+}
+
+.info-about {
+    width: 50%;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 5px;
+    color: white;
+    padding: 20px;
+    height: 75%;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+/* Mis servicios */
+.container-services {
+    background: #FC466B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: 100%;
+}
+
+.title-services {
+    font-size: 2rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-img-services {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-img-services img {
+    width: 25%;
+    display: flex;
+    border: 1px solid;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.wave-up {
+    background: #FC466B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100px;
+    width: 100%;
+}
+
+.wave-down {
+    background: #FC466B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100px;
+    width: 100%;
+}
+
+/* Contacto */
+.container-contact {
+    height: 80%;
+}
+
+.title-contact {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+input {
+    width: calc(50% - 40px);
+    height: 50px;
+    margin: 20px;
+}
+
+/* Footer */
+.container-footer {
+    height: 20vh;
+    background: black;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+@media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .content {
+        flex-wrap: wrap;
+        display: inline-block;
+        margin-left: 20%;
+    }
+    .info-about {
+        width: 80%;
+    }
+    .about-img {
+        width: 80%;
+        margin: 10% 0 10%;
+    }
+    .container-img-services {
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .container-img-services img {
+        width: 50%;
+        margin: 10% 0 10% 8%;
+        }
+}
+
+@media (max-width: 700px) {
+    .container-home {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .home-img {
+        width: 250px;
+        height: 250px;
+    }
+    .nav-bar {
+        flex-wrap: nowrap;
+        width: 100%;
+        position: static;
+        display: block;
+        }
+    .nav-bar a {
+        width: calc(100% / 4 - 20px);
+        margin-left: 5px;
+        font-size: 1rem;
+    }
+}
