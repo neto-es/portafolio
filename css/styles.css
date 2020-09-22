@@ -203,10 +203,11 @@ figure {
     flex-wrap: nowrap;
     width: 100%;
 }
-}
+
 figure img {
     display: flex;
 }
+
 .contenedor{
     display: flex;
     justify-content: space-around;
