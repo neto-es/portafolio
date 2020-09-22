@@ -127,7 +127,6 @@ header {
 /* Acerca de */
 .container-about {
     width: 100%;
-    margin-top: 100px;
     background-color: #7AC1F9;
     margin-bottom: 10%;
 }
@@ -140,7 +139,7 @@ header {
 .title-about {
     text-align: center;
     font-size: 2rem;
-    margin: 50px 0px 50px;
+    margin: 5%;
 }
 
 .about-img {
@@ -160,7 +159,6 @@ header {
     padding: 20px;
     height: 75%;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
-
 }
 
 /* Mis servicios */
@@ -202,12 +200,12 @@ figure {
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
-    width: 100%;
 }
-}
+
 figure img {
     display: flex;
 }
+
 .contenedor{
     display: flex;
     justify-content: space-around;
@@ -220,7 +218,6 @@ figure img {
     height: 250px;
     cursor: pointer;
     width: 300px;
-    overflow: hidden;
     border-radius: 6px;
     box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 }
@@ -355,8 +352,13 @@ input {
 
     .container-img-services img {
         width: 50%;
-        margin: 10% 0 10% 8%;
-        }
+    }
+
+    figure {
+    overflow: hidden;
+    margin: 10% 0 10% 8%;
+
+    }
 }
 
 @media (max-width: 700px) {
