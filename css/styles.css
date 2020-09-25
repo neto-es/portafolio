@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: #7AC1F9;
 }
@@ -50,6 +51,7 @@ body {
     width: 100%;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: nowrap;
 }
 
 .titles {
@@ -63,8 +65,53 @@ body {
 }
 
 .profession {
-    padding: 20px;
+    padding: 20px 20px 20px 30px;
+    animation: moveLeft 1s ease-in;
+}
+
+/* íconos */
+.list-icons {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+
+ul li {
+    width: 30px;
+    height: 30px;
+    margin: 8%;
+    display: flex;
+}
+
+li a {
+    width: 30px;
+    height: 30px;
+    display: flex;
+}
+
+li a i {
+    width: 30px;
+}
+
+.icon-facebook, .icon-instagram, .icon-github {
+    font-size: 40px;
+}
+
+.icon-facebook {
+    color: black;
+    animation: moveLeft 1s ease-in;
+}
+
+.icon-instagram {
     animation: moveDown 1s ease-in;
+    color: black;
+}
+
+.icon-github {
+    animation: ease-in 1s moveRight;
+    color: black;
 }
 
 .wave {
@@ -186,6 +233,7 @@ body {
     justify-content: space-around;
     width: 100%;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .container-img-services img {
@@ -194,7 +242,7 @@ body {
     border: 1px solid;
     border-radius: 6px;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
-    margin: 15% 0 15%;
+    margin: 15% 15% 15%;
 }
 
 .cover a {
@@ -257,7 +305,7 @@ figure img {
 }
 
 .container-hover figure:hover > .cover h3{
-    margin-top: 20%;
+    padding-top: 15%;
 }
 
 .container-hover figure:hover > img{
@@ -387,5 +435,9 @@ input {
         width: calc(100% / 4 - 20px);
         margin-left: 5px;
         font-size: 1rem;
+    }
+
+    .name, .profession {
+        font-size: 20px;
     }
 }
