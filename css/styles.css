@@ -446,6 +446,11 @@ input {
     .titles {
         width: 100%;
     }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 @media (max-width: 400px) {
